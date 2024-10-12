@@ -1,0 +1,63 @@
+@import 'blogcards.css';
+@import 'components.css';
+
+@media(min-width:900px){
+  
+}
+.container{
+      display:grid;
+   /* Step 2: setup rows amd columns */
+     grid-template-columns:auto;
+     grid-template-rows: 250px 600px auto;
+     min-height: 100vh;
+     width: 50rem;
+     margin: auto;
+     overflow: auto; 
+     
+   
+     border: 2px solid purple;
+  }
+#nestedGrids{
+    display: grid;
+    grid-gap: 10px;    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+  }
+  #nestedGrids1{
+    display: grid;
+    grid-gap: 10px;    
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1,32%);
+    border: 1px solid red;
+    background: #F8FA9D;
+  }
+.header{
+     
+  }
+.headerbox{
+  display:flex;
+  height: 15rem;
+  background: #F8FA9D;
+  justify-content: center; 
+
+ }
+a {
+  margin-top: 1rem;
+  margin-right: 30rem;
+ }
+.box{
+    display: flex;
+    border: 1px solid red;
+   
+    align-items: center;
+    justify-content: center;
+    }
+
+h1 {
+  position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: larger;
+    text-decoration:underline;
+    color: darkblue;
+}
