@@ -35,13 +35,14 @@
   justify-content: center; 
 
  }
-.headerbox a {
+a {
   margin-top: 1rem;
   margin-right: 30rem;
  }
 .box{
     display: flex;
     border: 1px solid red;
+   
     align-items: center;
     justify-content: center;
     }

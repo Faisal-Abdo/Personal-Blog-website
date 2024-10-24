@@ -1,0 +1,53 @@
+.blogPostContainer{
+    display:grid;
+   grid-template-columns:1fr;
+   grid-template-rows: 150px auto auto;
+   min-height: 100vh;
+   margin: auto;
+   overflow: auto; 
+  
+   border: 2px solid yellow;
+}
+.headerbox1 {
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    border: red;
+}
+.headerbox1 h1 {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:x-large;
+    text-decoration:underline;
+    color: darkblue;
+}
+.headerbox1 a{
+    margin-top: 1rem;
+    margin-right: 30rem;
+    padding-right: 40rem;
+}
+.contentBox{
+    display: grid;
+    grid-template-columns: 63rem 1fr;
+    height: 100vh;
+    grid-template-rows: auto;
+    border: 1px solid black;
+}
+.box01{
+    display: flex;
+    border:1px solid navy;
+}
+.nestedGrid01{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    border:1px solid navy;
+}
+.box02{
+    display: flex;
+    border:1px solid navy;
+}
+.box03{
+    display: flex;
+    border:1px solid navy;
+}

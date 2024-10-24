@@ -1,0 +1,36 @@
+h3{
+    position:absolute;
+    bottom: 53%;
+    
+    
+}
+p {
+    position:absolute;
+    
+    
+    top: 44%;
+    color:grey;
+}
+
+#one1{
+    background-image:url('/assets/Copilot.jpg');
+    background-size:contain;
+    
+}
+.box1{
+    display: flex;
+    border: 1px solid red;
+    background: #F8FA9D;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    }
+button{
+    margin: 50px 10px 20px 250px;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: white;
+
+}

@@ -1,0 +1,18 @@
+.Footer{
+    display: flex;
+   height:10rem;
+   color: white;
+   background-color:cornflowerblue;
+   margin-top: 1rem;
+}
+.footer-section {
+    color: white;
+    text-align: center;
+  
+  }
+  
+.footer-section h3 {
+    color: white;
+    text-align: center; 
+    text-align:justify;
+  }

@@ -1,0 +1,41 @@
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+     /* grid-template-columns: 200px 300px;*/
+     /* grid-template-rows: 250px 600px; */
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      border: 2px solid yellow;
+    /* alternative for grid-template-rows */
+    grid-auto-rows: minmax(150px, auto);
+    /* alternative for grid-template-columns */
+    grid-template-columns: 1fr 2fr;
+  }
+.box{
+    border: 1px solid red;
+    background: #F8FA9D;
+    }
+.header{
+    display:flex;
+    justify-content: center;
+    flex-direction:
+  }
+.footer{
+    grid-area:ft;
+  }
+.sidebar{
+    
+  }
+.content{
+    grid-area:main;
+  }
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: larger;
+    text-decoration:underline;
+    color: darkblue;
+}

@@ -1,0 +1,34 @@
+.container{
+      display:grid;
+   /* Step 2: setup rows amd columns */
+     grid-template-columns:auto;
+     grid-template-rows: 250px 600px;
+     
+     border: 2px solid yellow;
+  }
+#nestedGrids{
+    display: grid;
+    grid-gap: 10px;    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,25%);
+  }
+.box{
+    display: flex;
+    border: 1px solid red;
+    background: #F8FA9D;
+    align-items: center;
+    }
+.header{
+    justify-content: center;
+  
+  }
+.footer{
+   
+  }
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: larger;
+    text-decoration:underline;
+    color: darkblue;
+}

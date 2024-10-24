@@ -1,0 +1,12 @@
+.Footer{
+   height:10rem;
+   color: black;
+   background-color:cornflowerblue;
+}
+.footer-section {
+    text-align: left;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
