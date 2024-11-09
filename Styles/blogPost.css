@@ -86,5 +86,72 @@
     height:50%;
     object-fit: cover; /* Ensures the image covers the entire area */
     border-radius: 5%;
-    margin-left: 1rem;
+  }
+  .awards-section h2 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .awards-section {
+    background-color: #f9f9f9;
+  }
+  @media (max-width: 768px) {
+    .contentBox {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  
+    .headerbox1 h1 {
+      font-size: large;
+    }
+  
+    .headerbox1 a {
+      margin: 0;
+      padding: 0;
+      display: block;
+      text-align: center;
+    }
+  
+    .footerBlogPost {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  
+    .box01, .box02, .box03 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headerbox1 h1 {
+      font-size: medium;
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+  
+    .headerbox1 a {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .contentBox {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  
+    .footerBlogPost {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  
+    .author-avatar img {
+      width: 80%;
+      height: auto;
+    }
+  
+    .author-details p {
+      font-size: 0.9rem;
+    }
   }

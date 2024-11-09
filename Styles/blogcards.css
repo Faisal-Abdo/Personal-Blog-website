@@ -15,31 +15,6 @@
     top: 44%;
     color:grey;
 }
-
-#one1{
-    background-image:url('/assets/Copilot.jpg');
-    background-size:contain;
-}
-#one2{
-    background-image:url('/assets/quantum.png');
-    background-size:contain;   
-}
-#one3{
-    background-image:url('/assets/artificial-intelligence.png');
-    background-size:contain;   
-}
-#one4{
-    background-image:url('/assets/block.jpeg');
-    background-size:contain;   
-}
-#one5{
-    background-image:url('/assets/5G.jpeg');
-    background-size:contain;   
-}
-#one6{
-    background-image:url('/assets/sustainable.webp');
-    background-size:contain;   
-}
 .box1{
     display: flex;
     align-items: center;
@@ -58,5 +33,62 @@ button{
     color: white;
     font-family:Georgia, 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-color: white;
-
 }
+@media (max-width: 768px) {
+    .heading {
+      position: relative;
+      bottom: auto;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .p {
+      position: relative;
+      top: auto;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+  
+    .box1 {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .box1 img {
+      width: 80%;
+      height: auto;
+    }
+  
+    button {
+      margin: 1rem auto;
+      display: block;
+      width: 80%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+  
+    .box1 img {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    button {
+      margin: 0.5rem auto;
+      width: 90%;
+      padding: 0.4rem;
+      font-size: 0.9rem;
+    }
+  }

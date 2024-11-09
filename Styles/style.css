@@ -54,3 +54,56 @@ h1 {
     text-decoration:underline;
     color: darkblue;
 }
+/* tablets */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  #nestedGrids {
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  #nestedGrids1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+  }
+
+  .headerbox a {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: large;
+  }
+}
+
+/* mobile devices */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .headerbox {
+    flex-direction: column;
+  }
+
+  #nestedGrids {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .box {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+}
