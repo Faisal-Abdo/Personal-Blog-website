@@ -1,157 +1,202 @@
-.blogPostContainer{
-    display:grid;
-   grid-template-columns:1fr;
-   grid-template-rows: 150px auto auto;
-   min-height: 100vh;
-   margin: auto;
-   overflow: auto; 
-   border: 2px solid yellow;
+.blogPostContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px auto auto;
+  min-height: 100vh;
+  margin: auto;
+  overflow-x: hidden; 
+  max-width: 100%;   
+  border: 2px solid yellow;
 }
+
 .headerbox1 {
-    display: flex;
-    justify-content: center;
-    background-color: beige;
-    border: red;
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  border: red;
+  width: 100%; 
 }
+
 .headerbox1 h1 {
-    position: absolute;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size:x-large;
-    text-decoration:underline;
-    color: darkblue;
+  position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: x-large;
+  text-decoration: underline;
+  color: darkblue;
 }
-.headerbox1 a{
-    margin-top: 1rem;
-    margin-right: 30rem;
-    padding-right: 40rem;
+
+.headerbox1 a {
+  margin-top: 1rem;
+  margin-right: 30rem;
+  padding-right: 40rem;
 }
-.contentBox{
-    display: grid;
-    grid-template-columns: 63rem 1fr;
-    height: 100vh;
-    grid-template-rows: auto;
-    border: 1px solid black;
+
+.contentBox {
+  display: grid;
+  grid-template-columns: 63rem 1fr;
+  height: 100vh;
+  grid-template-rows: auto;
+  border: 1px solid black;
+  max-width: 100%; 
+  overflow-x: hidden; 
 }
-.box01{
-    display: flex;
-    border:1px solid navy;
+
+.box01, .box02, .box03 {
+  display: flex;
+  border: 1px solid navy;
+  width: 100%; 
 }
-.contentBox p{
-    margin-top: 4rem;
-    margin-left: 10px;
+
+.contentBox p {
+  margin-top: 4rem;
+  margin-left: 10px;
 }
-.contentBox h1{
-    margin-left: 10px;
+
+.contentBox h1 {
+  margin-left: 10px;
 }
-.nestedGrid01{
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    border:1px solid navy;
+
+.nestedGrid01 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border: 1px solid navy;
 }
-.box02{
-    display: flex;
-    border:1px solid navy;
+
+.footerBlogPost {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  height: 13rem;
+  color: white;
+  background-color: gainsboro;
+  margin-top: 1rem;
+  max-width: 100%; 
 }
-.box03{
-    display: flex;
-    border:1px solid navy;
-}
-.footerBlogPost{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap:5px;
-   height:13rem;
-   color: white;
-   background-color:gainsboro;
-   margin-top: 1rem;
-}
+
 .author-details p {
-    margin: 5px 0;
-    margin-top: 1rem;
-    margin-left:1rem ;
-    font-size: 1rem;
-    color: #333;
-  }
-.author-avatar{
-    display: flex;
-    flex-direction: column; /* Stacks the avatar on top and text below */
-    align-items: center;    /* Centers avatar and text horizontally */
-    text-align:center;     /* Centers the text under the avatar */
-    max-width: 200px;       /* Adjust width as needed */
-    margin-top: 0 auto;
+  margin: 5px 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #333;
 }
-.author-avatar img{
-    width: 100%;
-    height:50%;
-    object-fit: cover; /* Ensures the image covers the entire area */
-    border-radius: 5%;
-  }
-  .awards-section h2 {
-    font-family: 'Georgia', serif;
-    color: #333;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .awards-section {
-    background-color: #f9f9f9;
-  }
-  @media (max-width: 768px) {
-    .contentBox {
-      grid-template-columns: 1fr;
+
+.author-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto; 
+}
+
+.author-avatar img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.awards-section h2 {
+  font-family: 'Georgia', serif;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.awards-section {
+  background-color: #f9f9f9;
+  max-width: 100%; 
+}
+
+
+@media (max-width: 1200px) and (min-width: 481px) {
+  body {
+    overflow-x: auto; 
+}
+  .contentBox {
+      display: grid;
+      grid-template-columns: 1fr; 
       height: auto;
-    }
-  
-    .headerbox1 h1 {
-      font-size: large;
-    }
-  
-    .headerbox1 a {
+      padding: 1rem;
+      overflow-x: auto;
+  }
+
+  .footerBlogPost {
+      display: grid;
+      grid-template-columns: 1fr; 
+      padding: 1rem;
+      overflow-x: auto;
+  }
+
+  .box01, .box02, .box03 {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      width: 100%;
+      margin: 1rem 0;
+  }
+
+  .headerbox1 h1 {
+      font-size: 1.8rem; 
+  }
+
+  .headerbox1 a {
       margin: 0;
       padding: 0;
       display: block;
       text-align: center;
-    }
-  
-    .footerBlogPost {
-      grid-template-columns: 1fr;
-      height: auto;
-    }
-  
-    .box01, .box02, .box03 {
-      flex-direction: column;
-      align-items: center;
-    }
+      font-size: 1.2rem; 
   }
-  
-  @media (max-width: 480px) {
-    .headerbox1 h1 {
+
+  .author-avatar img {
+      width: 100%; 
+      max-width: 150px; 
+      height: auto;
+      border-radius: 50%;
+  }
+
+  .footer-section {
+      margin-bottom: 1rem; 
+  }
+
+  .footer-section a {
+      font-size: 2rem; 
+      margin: 0 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .headerbox1 h1 {
       font-size: medium;
       text-align: center;
       margin: 0.5rem 0;
-    }
-  
-    .headerbox1 a {
+  }
+
+  .headerbox1 a {
       margin: 0;
       padding: 0;
-    }
-  
-    .contentBox {
+  }
+
+  .contentBox {
       grid-template-columns: 1fr;
       padding: 1rem;
-    }
-  
-    .footerBlogPost {
+      max-width: 100%;
+  }
+
+  .footerBlogPost {
       grid-template-columns: 1fr;
       padding: 1rem;
-    }
-  
-    .author-avatar img {
+  }
+
+  .author-avatar img {
       width: 80%;
       height: auto;
-    }
-  
-    .author-details p {
-      font-size: 0.9rem;
-    }
   }
+
+  .author-details p {
+      font-size: 0.9rem;
+  }
+}
